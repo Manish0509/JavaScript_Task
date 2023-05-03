@@ -1,0 +1,158 @@
+body {
+  background-color: cadetblue;
+  height: 97vh;
+  width: 98vw;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+
+  /* border: 2px solid black; */
+  /* background-color: white; */
+}
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 15%;
+  padding: 20px;
+  background-color: white;
+  border: 2px solid black;
+}
+.formlist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  padding: 20px;
+  border: 2px solid black;
+  background-color: white;
+}
+.task-assignee {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+#title,
+#desc {
+  width: 100%;
+  border-radius: 5px;
+  border: 2px solid black;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.assignee {
+  margin-left: 10px;
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+textarea {
+  resize: none;
+}
+.submit-btn {
+  display: block;
+  color: white;
+  width: 100%;
+  margin-top: 10px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: darkgreen;
+  cursor: pointer;
+  text-align: center;
+}
+.submit-btn:hover {
+  background-color: green;
+}
+
+.nav-btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin: 0px;
+  padding: 0px;
+}
+#addTask-button {
+  background-color: #2e67f8;
+  color: white;
+  padding: 8px;
+  margin-left: 20px;
+  border: none;
+  border-radius: 5px;
+}
+#addTask-button:hover {
+  background-color: blue;
+  cursor: pointer;
+}
+#assignee-filter {
+  padding: 5px;
+  border: 2px solid black;
+}
+#task-status {
+  width: 100%;
+  padding: 5px;
+  border: 2px solid black;
+}
+.done {
+  margin-right: 60px;
+}
+.assign-task-head {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+  padding: 5px;
+}
+.sectionTask {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+.task-assignee-detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.task-progress {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#todoData,
+#inProgress,
+#done {
+  width: 30%;
+}
+
+#assigneeTodoTask,
+#assigneeProgressTask,
+#assigneeDoneTask {
+  width: 30%;
+}
+.toDoAddData,
+.inProgressAddData,
+.doneAddData {
+  width: 80%;
+  background-color: antiquewhite;
+  margin: 5px;
+  padding: 5px;
+  border: 2px solid black;
+}

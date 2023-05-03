@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clickup-Task</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="main">
+        <form class="form" id="form" style="display: none" onsubmit="event.preventDefault();onFormSubmit()">
+            <div class="form-title">
+                <label for="title">Title</label><br>
+                <input type="text" id="title" name="Title" placeholder="Title">
+            </div>
+            <div class="form-desc">
+                <label for="description">Description</label><br>
+                <textarea id="desc" name="desc" placeholder="Description" rows="5"></textarea>
+            </div>
+            <div class="task-assignee">
+                <label for="assignee">Assignee</label>
+                <select name="assignee" class="assignee" id="assignee">
+                    <option value="select" disabled selected>Assignee</option>
+
+                </select>
+            </div>
+            <button type="submit" class="submit-btn" id="submit">Submit</button>
+        </form>
+        <div class="formlist" id="formlist">
+            <div class="nav-btn">
+                <div class="addTask-btn">
+                    <button type="button" name="addTask" id="addTask-button">Add task</button>
+                </div>
+                <div class="task-assignee-detail">
+
+                    <select name="assigneeforFilter" id="assignee-filter" onchange="filterAssigneeList()">
+                        <option value="assignee" disabled selected>Assignee</option>
+                    </select>
+                </div>
+                <div class="task-status">
+                    <select name="taskStatus" id="task-status" onchange="filterAssigneeList()">
+                        <option value="defaultStatus" disabled selected>Status</option>
+                        <option value="all">All</option>
+                    </select>
+                </div>
+            </div>
+            <div class="assign-task-head" id="assign-task-head">
+                <div style="margin-left: 40px;">To Do</div>
+                <div>In progress</div>
+                <div style="margin-right: 40px;">Done</div>
+            </div>
+            <div id="sectionTask">
+                <div class="sectionTask">
+                    <div id="todoData"></div>
+                    <div id="inProgress"></div>
+                    <div id="done"></div>
+                </div>
+            </div>
+
+            <div id="taskAssigneeDisplay">
+                <div class="task-progress">
+                    <div id="assigneeTodoTask"></div>
+                    <div id="assigneeProgressTask"></div>
+                    <div id="assigneeDoneTask"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./newScript.js"></script>
+</body>
+
+</html>
